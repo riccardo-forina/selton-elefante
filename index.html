@@ -1,0 +1,64 @@
+<!doctype html>
+<html i18n-values="dir:textdirection;lang:language">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+                                 maximum-scale=1.0, user-scalable=no">
+  <title i18n-content="title"></title>
+  <link rel="stylesheet" href="build/index.css">
+  <link rel="stylesheet" href="build/animate.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+  <script src="game.js"></script>
+</head>
+<body>
+  <div class="page">
+    <h1 class="page-title"><img src="sprite/100-banner.png" srcset="sprite/100-banner.png 1x, sprite/200-banner.png 2x" alt="Selton - Cemitério de elefante"/></h1>
+
+    <div class="game">
+      <div class="game-description">To download "Selton - Cemitério de elefante" + extras play now!</div>
+      <div class="game-help">Space start Jump Band</div>
+      <div class="game-wrapper">
+        <div id="game"></div>
+        <a href="" id="download" class="game-download animated flash"><img src="sprite/popup.jpg" alt="Selton - Cemitério de elefante"/></a>
+      </div>
+      <div class="game-quickDownload">Don't want to play? It's ok we still love you <a href="">download here</a></div>
+      <div class="game-credits">This game is basedon the T-Rex Google Chrome Game</div>
+    </div>
+
+    <div class="video">
+      <iframe width="800" height="450" src="//www.youtube.com/embed/dW3WNlS_CrM" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="social">
+      <a href="http://www.facebook.com/seltonmusic" target="_blank" title="Facebook"><img src="sprite/fb.png"></a>
+      <a href="https://twitter.com/Seltonmusic" target="_blank" title="Twitter"><img src="sprite/tw.png"></a>
+      <a href="http://www.youtube.com/user/Seltonmusic/featured" target="_blank" title="Youtube"><img src="sprite/yt.png"></a>
+      <a href="https://soundcloud.com/selton" target="_blank" title="Soundcloud"><img src="sprite/sc.png"></a>
+    </div>
+  </div>
+  <div id="offline-resources">
+    <img id="offline-resources-1x" src="sprite/100-offline-sprite.png">
+    <img id="offline-resources-2x" src="sprite/200-offline-sprite.png">
+    <audio preload="auto" id="offline-sound-press">
+      <source src="sounds/button-press.m4a"/>
+      <source src="sounds/button-press.mp3"/>
+    </audio>
+    <audio preload="auto" id="offline-sound-hit">
+      <source src="sounds/hit.m4a"/>
+      <source src="sounds/hit.mp3"/>
+    </audio>
+    <audio preload="auto" id="offline-sound-reached">
+      <source src="sounds/score-reached.m4a"/>
+      <source src="sounds/score-reached.mp3"/>
+    </audio>
+    <audio preload="auto" autoplay loop id="soundtrack">
+      <source src="sounds/Cemitério%20de%20elefante%208%20bit.aac"/>
+      <source src="sounds/Cemitério%20de%20elefante%208%20bit.mp3"/>
+      <source src="sounds/Cemitério%20de%20elefante%208%20bit.wav"/>
+    </audio>
+  </div>
+  <script>
+      new Runner('#game');
+  </script>
+</body>
+</html>

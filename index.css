@@ -1,0 +1,81 @@
+html {
+  background-color: #f8f2ec;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+}
+
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 10vh;
+  text-transform: uppercase;
+}
+
+.page-title {
+  margin: 0;
+}
+.page-title img {
+  max-width: 100%;
+}
+
+.game {
+  border-bottom: 2px solid #3f5173;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  padding-bottom: 2vh;
+}
+
+.game-description,
+.game-help,
+.game-quickDownload,
+.game-credits {
+  width: 50%;
+}
+.game-help,
+.game-credits {
+  text-align: right;
+}
+.game-quickDownload,
+.game-credits {
+  align-self: flex-end;
+}
+.game-quickDownload a {
+  color: #3f5173;
+}
+.game-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10vh 0;
+}
+
+.game-download {
+  display: none;
+  max-width: 100vh;
+  margin: 10vh auto;
+  width: 550px;
+}
+
+#game {
+  max-width: 100vh;
+  min-height: 20vh;
+  margin: auto;
+  width: 550px;
+}
+
+#offline-resources {
+  display: none;
+}
+
+.video {
+  padding: 10vh;
+}
+
+.video iframe {
+  margin: auto;
+  width: 90%;
+}
+
+.social {
+  text-align: center;
+}
