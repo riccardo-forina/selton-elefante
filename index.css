@@ -1,7 +1,7 @@
 html {
   background-color: #f8f2ec;
   font-family: 'Oswald', sans-serif;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .page {
@@ -19,7 +19,7 @@ html {
 }
 
 .game {
-  border-bottom: 2px solid #3f5173;
+  border-bottom: 1px solid #3f5173;
   display: flex;
   flex-wrap: wrap;
   min-height: 50vh;
@@ -28,21 +28,11 @@ html {
 
 .game-description,
 .game-help,
-.game-quickDownload,
-.game-credits {
-  width: 50%;
+.credits {
+  width: 100%;
+  text-align: center;
 }
-.game-help,
-.game-credits {
-  text-align: right;
-}
-.game-quickDownload,
-.game-credits {
-  align-self: flex-end;
-}
-.game-quickDownload a {
-  color: #3f5173;
-}
+
 .game-wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -69,7 +59,7 @@ html {
 
 .game-help {
   align-self: flex-start;
-  margin-left: auto;
+  margin: auto;
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +69,11 @@ html {
 .game-help * {
   box-sizing: border-box;
   width: 50%;
+}
+
+.credits {
+  margin-top: 2vh;
+  font-size: 80%;
 }
 
 #offline-resources {
@@ -97,4 +92,8 @@ html {
 
 .social {
   text-align: center;
+}
+
+.quickDownload {
+  margin-bottom: 3vh;
 }

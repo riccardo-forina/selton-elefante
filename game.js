@@ -431,7 +431,6 @@ Runner.prototype = {
    */
   playIntro: function() {
     if (!this.started && !this.crashed) {
-      this.playSound(this.soundFx.SOUNDTRACK)
       this.playingIntro = true;
       this.tRex.playingIntro = true;
 
@@ -464,6 +463,7 @@ Runner.prototype = {
    * Update the game status to started.
    */
   startGame: function() {
+    this.playSound(this.soundFx.SOUNDTRACK);
     this.runningTime = 0;
     this.playingIntro = false;
     this.tRex.playingIntro = false;
@@ -716,6 +716,7 @@ Runner.prototype = {
    * Game over state.
    */
   gameOver: function() {
+    this.stopSound(this.soundFx.SOUNDTRACK);
     this.playSound(this.soundFx.HIT);
     vibrate(200);
 
@@ -763,6 +764,7 @@ Runner.prototype = {
 
   restart: function() {
     if (!this.raqId) {
+      this.playSound(this.soundFx.SOUNDTRACK);
       this.playCount++;
       this.runningTime = 0;
       this.activated = true;
@@ -796,11 +798,20 @@ Runner.prototype = {
 
   /**
    * Play a sound.
-   * @param {SoundBuffer} soundBuffer
    */
   playSound: function(sound) {
     if (sound) {
       sound.play();
+    }
+  },
+
+  /**
+   * Stop a sound.
+   */
+  stopSound: function(sound) {
+    if (sound) {
+      sound.pause();
+      sound.currentTime = 0;
     }
   }
 };
