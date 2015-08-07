@@ -68,19 +68,16 @@ html {
           align-self: flex-start;
   margin: auto;
   width: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  text-align: right;
 }
 
-.game-help * {
-  box-sizing: border-box;
-  width: 50%;
+.game-help-title {
+  display: block;
+  margin-bottom: 1vh;
+}
+
+.game-help-key {
+  display: inline-block;
+  width: 20px;
 }
 
 .credits {
