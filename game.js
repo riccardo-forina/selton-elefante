@@ -179,6 +179,7 @@ Runner.spriteDefinition = {
  * @enum {string}
  */
 Runner.sounds = {
+  SOUNDTRACK: 'soundtrack',
   BUTTON_PRESS: 'offline-sound-press',
   HIT: 'offline-sound-hit',
   SCORE: 'offline-sound-reached'
@@ -430,6 +431,7 @@ Runner.prototype = {
    */
   playIntro: function() {
     if (!this.started && !this.crashed) {
+      this.playSound(this.soundFx.SOUNDTRACK)
       this.playingIntro = true;
       this.tRex.playingIntro = true;
 

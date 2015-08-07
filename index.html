@@ -8,15 +8,26 @@
   <link rel="stylesheet" href="build/index.css">
   <link rel="stylesheet" href="build/animate.min.css">
   <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+  <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
   <script src="game.js"></script>
 </head>
 <body>
   <div class="page">
     <h1 class="page-title"><img src="sprite/100-banner.png" srcset="sprite/100-banner.png 1x, sprite/200-banner.png 2x" alt="Selton - Cemitério de elefante"/></h1>
+    <!--[if lte IE 9]>
 
+    <![endif]-->
+    <!--[if gte IE 10]>
     <div class="game">
-      <div class="game-description">To download "Selton - Cemitério de elefante" + extras play now!</div>
-      <div class="game-help">Space start Jump Band</div>
+      <div class="game-description">Reach 300 points to download our new single - have fun!</div>
+      <div class="game-help">
+        <span class="game-help-key">[Space]</span>
+        <span>start</span>
+        <span class="game-help-key"><i class="ion-arrow-up-b"></i></span>
+        <span>Jump</span>
+        <span class="game-help-key"><i class="ion-arrow-down-b"></i></span>
+        <span>Band</span>
+      </div>
       <div class="game-wrapper">
         <div id="game"></div>
         <a href="" id="download" class="game-download animated flash"><img src="sprite/popup.jpg" alt="Selton - Cemitério de elefante"/></a>
@@ -24,9 +35,33 @@
       <div class="game-quickDownload">Don't want to play? It's ok we still love you <a href="">download here</a></div>
       <div class="game-credits">This game is basedon the T-Rex Google Chrome Game</div>
     </div>
+    <![endif]-->
+    <!--[if !IE]> -->
+    <div class="game">
+      <div class="game-description">Reach 300 points to download our new single - have fun!</div>
+      <div class="game-help">
+        <span class="game-help-key">[Space]</span>
+        <span>start</span>
+        <span class="game-help-key"><i class="ion-arrow-up-b"></i></span>
+        <span>Jump</span>
+        <span class="game-help-key"><i class="ion-arrow-down-b"></i></span>
+        <span>Band</span>
+      </div>
+      <div class="game-wrapper">
+        <div id="game"></div>
+        <a href="" id="download" class="game-download animated flash"><img src="sprite/popup.jpg" alt="Selton - Cemitério de elefante"/></a>
+      </div>
+      <div class="game-quickDownload">Don't want to play? It's ok we still love you <a href="">download here</a></div>
+      <div class="game-credits">This game is basedon the T-Rex Google Chrome Game</div>
+    </div>
+    <!-- <![endif]-->
+
 
     <div class="video">
+      <iframe src="http://noisetrade.com/service/widgetv2/7a9e4bf9-243c-4080-8632-87b0e6cfabf5" width="300" height="375" scrolling="no" frameBorder="0"></iframe>
+      <!-- cancella questa riga per attivare il video
       <iframe width="800" height="450" src="//www.youtube.com/embed/dW3WNlS_CrM" frameborder="0" allowfullscreen></iframe>
+      cancella questa riga per attivare il video -->
     </div>
 
     <div class="social">
@@ -51,7 +86,7 @@
       <source src="sounds/score-reached.m4a"/>
       <source src="sounds/score-reached.mp3"/>
     </audio>
-    <audio preload="auto" autoplay loop id="soundtrack">
+    <audio preload="auto" loop id="soundtrack">
       <source src="sounds/soundtrack.aac"/>
       <source src="sounds/soundtrack.mp3"/>
       <source src="sounds/soundtrack.wav"/>

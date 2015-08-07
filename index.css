@@ -22,7 +22,7 @@ html {
   border-bottom: 2px solid #3f5173;
   display: flex;
   flex-wrap: wrap;
-  min-height: 70vh;
+  min-height: 50vh;
   padding-bottom: 2vh;
 }
 
@@ -51,16 +51,34 @@ html {
 
 .game-download {
   display: none;
-  max-width: 100vh;
-  margin: 10vh auto;
+  margin: 1vh auto;
+  max-width: 100%;
   width: 550px;
 }
 
+.game-download img {
+  width: 100%;
+}
+
 #game {
-  max-width: 100vh;
+  max-width: 100%;
   min-height: 20vh;
   margin: auto;
   width: 550px;
+}
+
+.game-help {
+  align-self: flex-start;
+  margin-left: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+.game-help * {
+  box-sizing: border-box;
+  width: 50%;
 }
 
 #offline-resources {
@@ -68,12 +86,13 @@ html {
 }
 
 .video {
-  padding: 10vh;
+  padding: 10vh 0;
+  text-align: center;
 }
 
 .video iframe {
   margin: auto;
-  width: 90%;
+  max-width: 90%;
 }
 
 .social {
